@@ -16,7 +16,7 @@ public class SelfHealingTestApplication {
 
 	@RequestMapping("/get")
 	public String getHello() {
-		return "Hello!";
+		return "Hello Wecome to Self Heal!";
 	}
 	@Bean
 	public CustomHealthIndicator getIndicator() {
