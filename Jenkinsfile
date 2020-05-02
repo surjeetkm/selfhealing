@@ -8,7 +8,7 @@ node{
 		sh "${mavenCmd} clean install"
 	}
 	stage("Build Docker Image"){
-		app=docker.build('microservices-2020/self-healing:v1')
+		app=docker.build('microservices-2020/self-healing:v2')
 	}
 	stage("Push Docker image to Container Registry"){
 			docker.withRegistry('https://eu.gcr.io', 'gcr:myregistry') {
